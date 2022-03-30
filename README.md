@@ -1,5 +1,5 @@
-# docker-laravel-handson
-
+# docker-laravel-handson2
 ## メモ
+## コンフリクトを修正しました。
 
-- abc
+### Dockerとgitの使い方テスト用です。
