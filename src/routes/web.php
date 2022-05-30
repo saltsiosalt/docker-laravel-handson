@@ -1,5 +1,6 @@
 <?php
 
+use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/greeting', function () {
+    Debugbar::info('info');
+    Debugbar::error('Error!');
+    Debugbar::warning('Watch out…');
+    Debugbar::addMessage('Another message', 'mylabel');
+    return 'Hello World';
 });
